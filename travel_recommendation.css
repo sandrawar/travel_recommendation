@@ -202,12 +202,32 @@ button:focus {
     font-style: italic;
   }
 
- /* Kontener wyników wyszukiwania */
-.search-results {
+ /* Kontener główny - umożliwia rozmieszczenie elementów obok siebie */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;  /* Przestrzeń między elementami */
+    flex-wrap: wrap;  /* Pozwala na zawijanie w przypadku mniejszych ekranów */
+    padding: 20px;
+  }
+  
+  /* Witający tekst - lewa sekcja */
+  .welcome-text {
+    flex: 1;  /* Zajmuje 1 część dostępnej przestrzeni */
+    max-width: 50%;  /* Ogranicza szerokość do 50% */
+  }
+  
+  /* Wyniki wyszukiwania - prawa sekcja */
+  #search-results {
+    flex: 1;  /* Zajmuje 1 część dostępnej przestrzeni */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 20px;
+    max-width: 50%;  /* Ogranicza szerokość do 50% */
+    display: none;  /* Początkowo ukryte */
   }
   
   /* Styl dla karty z miastem */
