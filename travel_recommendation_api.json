@@ -59,7 +59,7 @@
       {
         "id": 2,
         "name": "Taj Mahal, India",
-        "imageUrl": "taj-mahal.jpg",
+        "imageUrl": "taj_mahal.jpg",
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
     ],
@@ -67,7 +67,7 @@
       {
         "id": 1,
         "name": "Bora Bora, French Polynesia",
-        "imageUrl": "bora-bora.jpg",
+        "imageUrl": "bora_bora.jpg",
         "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows."
       },
       {
