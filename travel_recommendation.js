@@ -1,5 +1,6 @@
 const btnSearch = document.getElementById('btnSearch');
 const resultDiv = document.getElementById("search-results");
+const btnClear = document.getElementById('btnClear');
 
 function searchDest() {
   const inputElement = document.getElementById('destinationnInput');
@@ -72,6 +73,8 @@ function searchDest() {
         resultDiv.innerHTML = `<p>No results found for "${inputElement.value}".</p>`;
         resultDiv.style.display = 'flex';
       }
+      
+        inputElement.value = "";
     })
     .catch(error => {
       console.error('Error:', error);
@@ -80,4 +83,10 @@ function searchDest() {
     });
 }
 
+function clear(){
+    resultDiv.innerHTML = '';
+    resultDiv.style.display = 'none'; 
+}
+
 btnSearch.addEventListener('click', searchDest);
+btnClear.addEventListener('click', clear);
