@@ -255,6 +255,7 @@ button:focus {
   .city-card h3 {
     font-size: 1.2rem;
     margin: 10px 0;
+    color: black;
   }
   
   .city-card p {
