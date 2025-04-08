@@ -37,6 +37,10 @@ nav {
   height: 80px;  /* Zwiększona wysokość nagłówka */
 }
 
+h2 {
+    text-align: center;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
