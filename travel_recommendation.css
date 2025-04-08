@@ -201,4 +201,44 @@ button:focus {
     margin: 0;
     font-style: italic;
   }
+
+ /* Kontener wyników wyszukiwania */
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  /* Styl dla karty z miastem */
+  .city-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .city-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .city-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .city-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .city-card p {
+    font-size: 0.9rem;
+    color: #555;
+  }
   

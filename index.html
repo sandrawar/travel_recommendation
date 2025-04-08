@@ -7,36 +7,43 @@
 </head>
 <body>
    <nav>
-<ul><li><img src="icon.png" alt="TravelDreams Icon" width="70" height="70"></li>
-    <li><h1>TravelDreams</h1></li><li><a href="./index.html" id="home">Home </a></li>
-  <li><a href="./about.html" id="about">About Us </a></li>
-  <li><a href="./contact.html" id="contact">Contact Us </a></li>
-  <li><input type="text" id="destinationnInput" placeholder="Enter a destination or keyword">  </li>
-  <li><button id='btnSearch'>Search</button>
-  <li><button id='btnClear'>Clear</button>
-  </li>
+    <ul>
+      <li><img src="icon.png" alt="TravelDreams Icon" width="70" height="70"></li>
+      <li><h1>TravelDreams</h1></li>
+      <li><a href="./index.html" id="home">Home </a></li>
+      <li><a href="./about.html" id="about">About Us </a></li>
+      <li><a href="./contact.html" id="contact">Contact Us </a></li>
+      <li><input type="text" id="destinationnInput" placeholder="Enter a destination or keyword">  </li>
+      <li><button id="btnSearch">Search</button></li>
+      <li><button id="btnClear">Clear</button></li>
+    </ul>
+  </nav>
+  
+  <div class="content-container">
+    <!-- Witający tekst -->
+    <div class="welcome-text">
+      <h1 class="quote">EXPLORE <br>
+        DREAM   <br>
+        DESTINATION <br>
+      </h1>
+      <div class="hero-section">
+        <div class="overlay">
+          At TravelDreams, we believe that travel isn't just about the destination—it's about the journey, 
+          the experiences, and the memories you create along the way.
+          
+          Whether you're dreaming of tropical beaches, historic cities, mountain escapes, or hidden local gems, 
+          we're here to inspire your travels and help you plan the perfect getaway.
+          
+          Let’s explore the world together — one trip at a time.
+        </div>
+      </div>
+    </div>
 
-</ul>
-</nav>
-<h1 class="quote">EXPLORE <br>
-    DREAM   <br>
-    DESTINATION <br>
-</h1>
-<div class="hero-section">
-    <div class="overlay">
-        At TravelDreams, we believe that travel isn't just about the destination—it's about the journey, 
-        the experiences, and the memories you create along the way.
+    <!-- Wyniki wyszukiwania (domyślnie ukryte) -->
+    <div id="search-results" class="search-results" style="display: none;">
+    </div>
+  </div>
 
-        Whether you're dreaming of tropical beaches, historic cities, mountain escapes, or hidden local gems, 
-        we're here to inspire your travels and help you plan the perfect getaway.
-        
-        Let’s explore the world together — one trip at a time.
-</div>
-</div>
-
-<div id="search-results">
-</div>
-
-<script src="./travel_recommendation.js"></script>
+  <script src="./travel_recommendation.js"></script>
 </body>
 </html>

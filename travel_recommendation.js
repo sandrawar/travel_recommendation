@@ -3,8 +3,8 @@ const resultDiv = document.getElementById("search-results");
 
 function searchDest() {
   const inputElement = document.getElementById('destinationnInput');
-  const input = document.getElementById('destinationnInput').value.toLowerCase();
-  resultDiv.innerHTML = ''; 
+  const input = inputElement.value.toLowerCase();
+  resultDiv.innerHTML = '';  // Czyszczenie wyników przed dodaniem nowych
 
   fetch('travel_recommendation_api.json')
     .then(response => response.json())
@@ -16,21 +16,25 @@ function searchDest() {
 
         cities.forEach(city => {
           resultDiv.innerHTML += `
-            <div class="city">
+            <div class="city-card">
               <h3>${city.name}</h3>
-              <img src="${city.imageUrl}" alt="${city.name}" style="max-width: 200px;">
+              <img src="${city.imageUrl}" alt="${city.name}">
               <p>${city.description}</p>
             </div>
           `;
         });
-        inputElement.value = '';
+
+        // Pokazanie wyników wyszukiwania
+        resultDiv.style.display = 'flex';  // Pokazuje kontener wyników wyszukiwania
       } else {
         resultDiv.innerHTML = 'Destination not found.';
+        resultDiv.style.display = 'flex';  // Pokazuje komunikat o braku wyników
       }
     })
     .catch(error => {
       console.error('Error:', error);
       resultDiv.innerHTML = 'An error occurred while fetching data.';
+      resultDiv.style.display = 'flex';  // Pokazuje komunikat o błędzie
     });
 }
 
