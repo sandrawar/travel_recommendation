@@ -8,14 +8,25 @@ body {
   background-position: center;  /* wyśrodkowanie */
 }
 
-.about-text {
-  background-color: rgba(0, 0, 0, 0.578); /* czarne tło z 50% przezroczystości */
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: auto;
+.hero-section {
+  background-image: url('images/your-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* "mgła" */
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
 
 /* Stylizacja nagłówka */
 nav {
